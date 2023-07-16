@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@100;300&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-size: 12px;
+    background-color: #ebebeb;
+    padding: 0;
+    margin: 0;
+}
+
+.titulares {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+.precios {
+    font-size: 18px;
+    list-style: none;
+    flex-grow: 0.30;
+}
+
+.descuentos {
+    font-size: 16px;
+    list-style: none;
+    color: green;
+    flex-grow: 0.70;
+}
+
+.descripcion {
+    font-size: 16px;
+    margin-bottom: 10px;
+    list-style: none;
+    display: none;
+
+}
+
+
+.head {
+    background-color: #EAC926;
+    width: 100%;
+
+}
+
+.tamaño-logo {
+    width: 50%;
+}
+
+.titulo-cuotas {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+
+.banner {
+    width: 100%;
+    display: block;
+}
+
+
+.buscar {
+    background-color: white;
+    border: none;
+    /*elimina el borde*/
+    outline: none;
+    /*elimina el contorno resaltado al seleccionar el campo*/
+    width: 100%;
+}
+
+
+.search-bar {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 7%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo-buscar-container {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
+.fa-magnifying-glass {
+    background-color: white;
+}
+
+
+.imagenes {
+    width: 100%;
+}
+
+
+.pie-depagina h2,
+p {
+    text-align: center;
+    margin: 0;
+
+}
+
+.icon-pie-depagina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    width: 7%;
+    height: 5vh;
+    margin: auto;
+    color: blue;
+    margin-bottom: 5px;
+    margin-top: 10%;
+}
+
+
+.navbar ul,
+.login-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .login-bar {
+    margin-bottom: 15px;
+} */
+
+
+.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7vw;
+    height: 5vh;
+    margin: auto;
+    color: white;
+    background-color: blue;
+    font-size: 2em;
+    padding: 6%;
+    margin-bottom: 5%;
+    border-radius: 12%;
+}
+
+
+
+/* Selecciona todos los elementos desendientes directos de main */
+main>* {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    background-color: white;
+}
+
+
+
+.article {
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+}
+
+
+
+.navbar,
+.login-bar {
+    display: none;
+}
+
+
+
+.pie-depagina {
+    background-color: #ebebeb;
+}
+
+
+/* Flexbox */
+
+.container-precio {
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Formulario */
+.register-form,
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15%;
+}
+
+.register-form input {
+    width: 100%;
+    border-radius: 10%;
+    padding: 5px;
+
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+
+}
+
+.input-group label {
+    display: flex;
+
+
+}
+
+
+.input-group select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.titulos {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.input-group input[value="Ingresá"]:hover {
+    background-color: #0022AA;
+    color: white;
+}
+
+
+.input-group input[value="Registrarme"] {
+    background-color: #87CEEB;
+    color: black;
+}
+
+.input-group:hover input[value="Registrarme"]:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+@media (min-width: 361px) {
+    .descripcion {
+        display: block;
+    }
+
+    .products {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        width: 40vw;
+    }
+
+    .navbar,
+    .login-bar {
+        display: block;
+    }
+
+    .navbar li,
+    .login-bar li {
+        display: inline-block;
+        margin-right: 15px;
+    }
+
+    .unir-nav-login {
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .productos {
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .precios {
+        font-size: 15px;
+
+    }
+
+    .descuentos,
+    .descripcion {
+        font-size: 13px;
+    }
+
+    .container-precio {
+        margin-bottom: 14px;
+        justify-content: space-around;
+    }
+
+    .fa-magnifying-glass,
+    .buscar,
+    .search-bar {
+        border: 1px solid black;
+        padding: 0;
+
+
+    }
+
+    .fa-magnifying-glass {
+        margin-left: 1%;
+    }
+
+    .unir-search {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+
+    .titulo-cuotas {
+        font-size: 12px;
+        text-align: left
+    }
+
+    .titulares {
+        width: 90%;
+    }
+
+    .register-form,
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        width: 60vw;
+        margin: auto;
+        justify-content: space-around;
+
+    }
+
+    .register-form input {
+        width: 60vw;
+        margin: auto;
+        margin-bottom: 15px;
+
+    }
+
+}
+
+
+
+
+
+
+@media (min-width: 769px) {
+    .descripcion {
+        display: none;
+
+    }
+
+    .products:hover .descripcion {
+        display: block;
+    }
+
+    .products:hover {
+        transform: scale(1.2);
+    }
+
+    .products:hover .fa-truck-fast {
+        transform: rotate(-90deg);
+    }
+
+
+    .products,
+    .fa-truck-fast {
+        transition-duration: 800ms;
+    }
+
+
+
+    .products {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: inline-block;
+        width: 20vw;
+
+    }
+
+    .navbar,
+    .login-bar {
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .productos {
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .container-precio {
+        margin-bottom: 14px;
+        justify-content: space-around;
+    }
+
+    .titulares {
+        width: 88%;
+    }
+
+
+    .pie-depagina {
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .fa-credit-card:hover,
+    .fa-gift:hover,
+    .fa-user-shield:hover {
+        color: #39b54a;
+    }
+
+}
